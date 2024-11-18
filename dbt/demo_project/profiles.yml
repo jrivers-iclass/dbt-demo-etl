@@ -1,0 +1,12 @@
+demo_project:
+  outputs:
+    dev:
+      type: postgres
+      threads: 1
+      host: postgres
+      port: 5432
+      user: dbtuser
+      pass: dbtpass
+      dbname: analytics
+      schema: public
+  target: dev

@@ -1,0 +1,34 @@
+name: 'demo_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'demo_project'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+    - "target"
+    - "dbt_packages"
+    - "logs"
+
+seeds:
+  demo_project:
+    +schema: raw_data
+    mysql_users:
+      +column_types:
+        userid: integer
+        createdat: timestamp
+    mysql_orderdetails:
+      +column_types:
+        orderid: integer
+        userid: integer
+        orderamount: float
+        orderdate: timestamp
+
+models:
+  demo_project:

@@ -1,0 +1,16 @@
+# dbt specific directories
+dbt/demo_project/logs/
+dbt/demo_project/target/
+dbt/demo_project/seeds/
+dbt/demo_project/dbt_packages/
+
+# Airflow logs
+airflow/logs/
+airflow/dags/__pycache__/
+
+# Additional common dbt files to ignore (optional)
+*.log
+.DS_Store 
+
+# dbt user-specific files
+.user.yml 
