@@ -11,6 +11,7 @@ airflow/dags/__pycache__/
 # Additional common dbt files to ignore (optional)
 *.log
 .DS_Store 
+dbt/demo_project/models/example/source.sql
 
 # dbt user-specific files
 .user.yml 

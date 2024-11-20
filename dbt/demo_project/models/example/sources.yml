@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: raw_data
-    database: analytics
-    schema: public_raw_data
-    tables:
-      - name: mysql_users
-      - name: mysql_orderdetails

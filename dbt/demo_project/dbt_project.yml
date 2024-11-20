@@ -19,16 +19,7 @@ clean-targets:
 seeds:
   demo_project:
     +schema: raw_data
-    mysql_users:
-      +column_types:
-        userid: integer
-        createdat: timestamp
-    mysql_orderdetails:
-      +column_types:
-        orderid: integer
-        userid: integer
-        orderamount: float
-        orderdate: timestamp
+    +quote_columns: true
 
 models:
   demo_project:
